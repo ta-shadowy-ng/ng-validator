@@ -5,10 +5,6 @@
   "author": {
     "name": "Tuyen Nguyen"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ta-shadowy-ng/ng-validator.git"
-  },
   "peerDependencies": {
     "@angular/common": "^16.2.10",
     "@angular/core": "^16.2.10",
