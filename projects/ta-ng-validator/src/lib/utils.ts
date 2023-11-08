@@ -1,4 +1,4 @@
-import { isObservable, Observable, firstValueFrom } from 'rxjs';
+import { isObservable, Observable } from 'rxjs';
 import { ValidationError } from './models';
 
 export function isPromise(arg: unknown): boolean {
@@ -8,7 +8,7 @@ export function isPromise(arg: unknown): boolean {
 export function toPromise<T>(arg: T | Promise<T> | Observable<T>): Promise<T> {
   let result: Promise<T>;
   if (!!arg || isObservable(arg)) {
-    result = firstValueFrom(arg as Observable<T>)
+    result = (arg as Observable<T>).toPromise();
   } else if (isPromise(arg)) {
     result = arg as Promise<T>;
   } else {
