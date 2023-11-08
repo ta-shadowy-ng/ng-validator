@@ -1,6 +1,6 @@
 {
   "name": "@ta-shadowy/ng-validator",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "license": "MIT",
   "author": {
     "name": "Tuyen Nguyen"
@@ -11,7 +11,7 @@
     "rxjs": "^6.5.5"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.6.2"
   },
   "sideEffects": false,
   "devDependencies": {
